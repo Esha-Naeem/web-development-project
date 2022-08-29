@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Voting Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            div{
+                width: 50%;
+                padding: 30px;
+                margin: 20px auto;
+                text-align: center;
+            }
+            h1{
+                margin-bottom: 30px;
+            }
+            h2{
+                margin-bottom: 10px;
+            }
+            table{
+                width: 100%;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Online Voting System</h1>
+            <h3>Voting Form</h3>
+            <form action="VoteFormSvlt" method="post">
+                <table border="1" cellpadding="30" cellspacing="0">
+                    <tr>
+                        <th>Student ID</th>
+                        <td><input type="text" name="id" placeholder="mc200404639" autocomplete="off" required /></td>
+                    </tr>
+                    <tr>
+                        <th>Select A Candidate</th>
+                        <td>
+                            <select name="party">
+                                <option disabled selected>Select Candidate</option>
+                                <option value="Nawaz Sharif-PMLN">Nawaz Sharif-PMLN</option>
+                                <option value="Imran Khan-PTI">Imran Khan-PTI</option>
+                                <option value="Asif Ali Zardari-PPP">Asif Ali Zardari-PPP</option>
+                                <option value="Molana Fazal-UR-Rehman-JUI">Molana Fazal-UR-Rehman-JUI</option>
+                                <option value="Other Party">Other Party</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="submit" value="Submit" />
+                            <input type="reset" name="reset" value="Reset" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div>Click To View Your Vote Details: <a href="SeeVotingDetailSvlt?id=mc200404639">View Voting Details</a></div>
+        
+    </body>
+</html>
